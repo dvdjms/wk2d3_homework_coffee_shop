@@ -10,6 +10,10 @@ class Customer:
     def decrease_wallet(self, amount):
         self.wallet += amount
     
-    def customer_energy(self, customer, drink):
+    def customer_energy_drink(self, customer, drink):
         energy = customer + drink
+        return energy
+
+    def customer_energy_food(self, customer, food):
+        energy = customer - food
         return energy
